@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    pull_policy: never
+    restart: always
+    env_file:
+      - .env
